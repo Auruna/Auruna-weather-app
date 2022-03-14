@@ -65,10 +65,12 @@ h4 {
 .btn-btn-success {
   text-align: right;
 }
-
-.weather-app {
+.weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
+}
+
+.weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
