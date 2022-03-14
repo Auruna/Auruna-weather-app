@@ -50,7 +50,7 @@ h4 {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  background-color: bisque;
+  background-image: url("paper.gif");
 }
 
 .row {
