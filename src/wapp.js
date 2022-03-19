@@ -82,7 +82,6 @@ dateElement.innerHTML = formatDate(response.data.dt * 1000;
 
   getForecast(response.data.coord);
 }
-}
 
 
 function searchCity(city) {
