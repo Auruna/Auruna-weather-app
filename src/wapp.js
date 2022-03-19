@@ -37,6 +37,13 @@ let month = months[now.getMonth()];
 h4.innerHTML = `📅${day} ${date} ${month} ${year}
 🕑${hours}:${minutes}`;
 
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+  return `${day} ${hours} ${minutes}`;
+}
 function showTemperature(response) {
   document.querySelector(".city").innerHTML = response.data.name;
   document.querySelector(".temperature").innerHTML = Math.round(
@@ -49,14 +56,6 @@ function showTemperature(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("date").innerHTML = response.data.dt * 1000;
-}
-
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let day = date.getDay();
-  return `${day} ${hours} ${minutes}`;
 }
 
 function searchCity(city) {
