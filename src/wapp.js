@@ -48,6 +48,7 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("date").innerHTML = response.data.dt * 1000;
 }
 
 function formatDate(timestamp) {
@@ -110,6 +111,3 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
-
-let dateElement = document.querySelector("date");
-dateElement.innerHTML = formatDate(response.data.dt * 1000);
