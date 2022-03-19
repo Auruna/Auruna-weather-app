@@ -42,13 +42,14 @@ function showTemperature(response) {
   document.querySelector(".temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  let dateElement = document.querySelector("date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function formatDate(timestamp) {
@@ -58,8 +59,6 @@ function formatDate(timestamp) {
   let day = date.getDay();
   return `${day} ${hours} ${minutes}`;
 }
-let dateElement = document.querySelector("date");
-dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
