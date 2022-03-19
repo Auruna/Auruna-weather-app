@@ -61,8 +61,6 @@ function formatDate(timestamp) {
 }
 
 function showTemperature(response) {
-  let dateElement = document.querySelector("#date");
-  let iconElement = document.querySelector("#icon");
   document.querySelector(".city").innerHTML = response.data.name;
   document.querySelector(".temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -73,14 +71,18 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+}
+
+function changingDateAndIcon(response) {
+let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(response.data.dt * 1000;
- iconElement.setAttribute(
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-}
-
+  }
 
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
