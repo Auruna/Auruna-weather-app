@@ -73,6 +73,11 @@ function showTemperature(response) {
   document.querySelector("date").innerHTML = response.data.dt * 1000;
 }
 
+function formatDate(response) {
+  let dateElement = document.querySelector("date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+}
+
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
