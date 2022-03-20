@@ -71,7 +71,7 @@ function showTemperature(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
-  document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
+    document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
