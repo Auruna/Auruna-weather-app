@@ -74,6 +74,15 @@ h4 {
   background-image: url(https://ak.picdn.net/shutterstock/videos/1007367289/thumb/1.jpg);
 }
 
+.clearfix .active {
+  color: #668ee5;
+  cursor: default;
+}
+
+.clearfix .active {
+  text-decoration: none;
+}
+
 .row {
   color: white;
   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
