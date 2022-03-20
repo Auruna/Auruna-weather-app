@@ -79,7 +79,7 @@ h4 {
   cursor: default;
 }
 
-.clearfix .active {
+.clearfix.active: hover {
   text-decoration: none;
 }
 
