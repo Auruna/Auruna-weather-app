@@ -83,6 +83,14 @@ h4 {
   text-decoration: none;
 }
 
+.clearfix.f-change {
+  color: #668ee5;
+  cursor: default;
+}
+
+.clearfix.f-change: hover {
+  text-decoration: none;
+}
 .row {
   color: white;
   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
