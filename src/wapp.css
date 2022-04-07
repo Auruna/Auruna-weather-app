@@ -134,15 +134,8 @@ h4 {
 }
 
 .card {
-  background: radial-gradient(
-    circle at -8.9% 51.2%,
-    rgb(255, 124, 0) 0%,
-    rgb(255, 124, 0) 15.9%,
-    rgb(255, 163, 77) 15.9%,
-    rgb(255, 163, 77) 24.4%,
-    rgb(19, 30, 37) 24.5%,
-    rgb(19, 30, 37) 66%
-  );
+  background-image: url(https://ak.picdn.net/shutterstock/videos/1007367289/thumb/1.jpg);
+);
 }
 
 .card-title,
