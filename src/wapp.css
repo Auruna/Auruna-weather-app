@@ -134,8 +134,7 @@ h4 {
 }
 
 .card {
-  background-image: url(https://ak.picdn.net/shutterstock/videos/1007367289/thumb/1.jpg);
-);
+  background-image: url(path/to/animated.gif);
 }
 
 .card-title,
