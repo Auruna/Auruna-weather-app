@@ -139,17 +139,6 @@ p {
   color: white;
 }
 
-.raining {
-  color: black;
-  font-size: 40px;
-  transition: all 150ms ease-in-out;
-}
-
-.raining:hover {
-  font-size: 80px;
-  color: cornflowerblue;
-}
-
 .card {
   text-align: right;
   max-width: 800px;
