@@ -151,6 +151,7 @@ p {
 }
 
 .card {
+  text-align: right;
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
