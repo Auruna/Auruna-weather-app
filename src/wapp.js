@@ -98,6 +98,7 @@ function displayForecast(response) {
       )}° </span>
       </div>
       </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
