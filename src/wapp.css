@@ -89,11 +89,6 @@ h4 {
   text-align: center;
 }
 
-.row:hover {
-  font-size: 40px;
-  transition: all 150ms ease-in-out;
-}
-
 .sunny {
   color: black;
   font-size: 40px;
