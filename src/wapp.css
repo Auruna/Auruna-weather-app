@@ -95,7 +95,6 @@ p {
 .clearfix .active {
   color: #668ee5;
   cursor: default;
-  font-size: 10px;
 }
 
 .clearfix.active:hover {
@@ -104,9 +103,9 @@ p {
 
 .temperature {
   color: cornflowerblue;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 19px;
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
 
 .weather-forecast {
