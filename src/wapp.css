@@ -101,6 +101,10 @@ p {
   text-decoration: none;
 }
 
+.temperature {
+  color: aqua;
+  font-size: 40px;
+}
 .weather-forecast {
   color: white;
   background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
