@@ -95,6 +95,7 @@ p {
 .clearfix .active {
   color: #668ee5;
   cursor: default;
+  font-size: 10px;
 }
 
 .clearfix.active:hover {
