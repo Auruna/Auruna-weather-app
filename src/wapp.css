@@ -80,6 +80,10 @@ p {
   );
 }
 
+small {
+  text-align: center;
+}
+
 .btn-btn-success {
   text-align: right;
 }
