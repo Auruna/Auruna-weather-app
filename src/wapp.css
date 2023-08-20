@@ -83,6 +83,10 @@ p {
 .btn-btn-success {
   text-align: right;
 }
+#current-location-btn {
+  margin-top: 10px;
+}
+
 .weather-app {
   max-width: 800px;
   margin: 30px auto;
